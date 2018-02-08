@@ -1,0 +1,243 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+select {
+    height: 28px;
+    border: 1px solid #f9f9f9;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 500;
+    outline: none;
+}
+
+ul {
+    margin: 5px;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+    li:before {
+        font-family: 'FontAwesome';
+        font-weight: 500;
+        content: '\f101';
+        margin: 0 3px 0 -15px;
+        color: #d94e44;
+    }
+
+header {
+    background-color: #d94e44;
+    color: white;
+}
+
+    header.brand {
+        text-align: center;
+        height: 37px;
+        line-height: 37px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+nav {
+    background-color: white;
+    height: 42px;
+    line-height: 42px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+    nav .nav-left {
+        height: 100%;
+        width: 50%;
+        float: left;
+        text-align: center;
+        border-bottom: 1px solid #d6d4d4;
+        border-right: 1px solid #d6d4d4;
+        color: #d94e44;
+    }
+
+    nav .nav-right {
+        height: 100%;
+        width: 50%;
+        float: left;
+        text-align: center;
+        border-bottom: 1px solid #d6d4d4;
+    }
+
+.recipe-container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+form {
+    max-width: 1000px;
+    padding-top: 15px;
+}
+
+    form input,
+    form select,
+    form textarea {
+        border: none;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        padding: 7px;
+        font-size: 10px;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+    }
+
+    form input,
+    form select {
+        height: 25px;
+        line-height: 25px;
+    }
+
+    form select {
+        padding: 0;
+    }
+
+    form .form-section header {
+        height: 26px;
+        line-height: 26px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    form .form-section .content {
+        background-color: #f6f4f4;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    form label {
+        font-weight: 600;
+        margin-right: 3px;
+    }
+
+    form .form-control {
+        margin-bottom: 15px;
+    }
+
+        form .form-control > input,
+        form .form-control > textarea {
+            margin-top: 5px;
+            display: block;
+            width: 100%;
+        }
+
+.cols-3 {
+    width: 33%;
+    float: left;
+}
+
+    .cols-3 select[name="portions"] {
+        width: 26px;
+    }
+
+    .cols-3 select[name="time"] {
+        width: 32px;
+        text-align: center;
+    }
+
+    .cols-3 select[name="difficulty"] {
+        width: 26px;
+        text-align: right;
+    }
+
+    .cols-3.time-input {
+        text-align: center;
+    }
+
+    .cols-3.difficulty-input {
+        text-align: right;
+    }
+
+.ingrd-wrapper {
+    float: left;
+    margin-top: 10px;
+    height: 25px;
+    line-height: 25px;
+}
+
+    .ingrd-wrapper.quantity {
+        width: 15%;
+    }
+
+        .ingrd-wrapper.quantity input {
+            width: 50px;
+        }
+
+    .ingrd-wrapper.unit {
+        width: 20%;
+        text-align: center;
+    }
+
+        .ingrd-wrapper.unit select {
+            width: 70px;
+        }
+
+    .ingrd-wrapper.of-div {
+        width: 10%;
+        text-align: center;
+    }
+
+    .ingrd-wrapper.ingredient {
+        width: 45%;
+        text-align: center;
+    }
+
+        .ingrd-wrapper.ingredient input {
+            width: 200px;
+        }
+
+    .ingrd-wrapper.add-ingredient {
+        width: 10%;
+        text-align: right;
+    }
+
+        .ingrd-wrapper.add-ingredient span {
+            width: 20px;
+            height: 25px;
+            line-height: 25px;
+            border: 1px solid #d94e44;
+            text-align: center;
+            color: #d94e44;
+            background-color: white;
+        }
+
+/*@media (max-width: 575px) {
+    .ingrd-wrapper.of-div {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 1199px) {
+}*/
